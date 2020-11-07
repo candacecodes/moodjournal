@@ -1,4 +1,6 @@
 class MoodsController < ApplicationController
-    has_many :entries 
-    has_many :users, through: :entries 
+    def index 
+        moods = Mood.all
+        render json: moods
+    end
 end
