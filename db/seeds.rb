@@ -1,7 +1,32 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+User.create(name: "name1")
+User.create(name: "name2")
+User.create(name: "name3")
+User.create(name: "name4")
+User.create(name: "name5")
+
+
+# t.string "title"
+# t.string "description"
+
+Mood.create(title: "mood1", description: "description1")
+Mood.create(title: "mood2", description: "description2")
+Mood.create(title: "mood3", description: "description3")
+Mood.create(title: "mood4", description: "description4")
+Mood.create(title: "mood5", description: "description5")
+
+
+# t.string "date"
+# t.string "title"
+# t.text "context"
+# t.float "intensity_level"
+# t.integer "user_id"
+# t.integer "mood_id"
+
+Entry.create(date: "date1", title: "entrytitle1", context: "entrycontent1", intensity_level: "1", mood_id:1, user_id: 1)
+# Entry.create(date: "date2", title: "entrytitle2", context: "entrycontent2", mood: Mood2, intensity_level: "2")
+# Entry.create(date: "date3", title: "entrytitle3", context: "entrycontent3", mood: mood3, intensity_level: "3")
+# Entry.create(date: "date4", title: "entrytitle4", context: "entrycontent4", mood: mood4, intensity_level: "4")
+# Entry.create(date: "date5", title: "entrytitle5", context: "entrycontent5", mood: mood5, intensity_level: "5")
+
+
+puts 'seeds done'
