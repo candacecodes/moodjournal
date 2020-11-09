@@ -10,6 +10,18 @@ class EntriesController < ApplicationController
         render json: entry
     end 
 
+    def update 
+        entry = Entry.find_by_id(params[:id])
+        entry.update(entry_params)
+        render json: entry 
+    end 
+
+    def destroy 
+        entry = Entry.find_by_id(params[:id])
+        entry.delete 
+        render json: entry 
+    end 
+
     private 
     def entry_params
         params.permit(:user_id, :date, :title, :context, :intensity_level, :mood_id)
