@@ -5,7 +5,7 @@ class EntriesController < ApplicationController
     end
 
     def create 
-        entry = Entry.new(card_params) 
+        entry = Entry.new(entry_params) 
         entry.save 
         render json: entry
     end 
