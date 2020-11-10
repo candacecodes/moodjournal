@@ -30,7 +30,10 @@ ActiveRecord::Schema.define(version: 2020_11_09_182225) do
 
   create_table "moods", force: :cascade do |t|
     t.string "title"
-    t.string "description"
+    t.text "description"
+    t.text "facial_expressions"
+    t.text "body_language"
+    t.text "physical_reactions"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
