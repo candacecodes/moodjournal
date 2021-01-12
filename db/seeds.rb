@@ -31,11 +31,11 @@ mood6 = Mood.create(title: "Surprise", description: "Surprise is usually quite b
 # t.integer "user_id"
 # t.integer "mood_id"
 
-entry1 = Entry.create(date: "date1", title: "entrytitle1", context: "entrycontent1", intensity_level: "1", mood_id: mood1.id, user_id: user1.id)
-entry2 = Entry.create(date: "date2", title: "entrytitle2", context: "entrycontent2", intensity_level: "2", mood_id:mood2.id, user_id: user2.id)
-entry3 = Entry.create(date: "date3", title: "entrytitle3", context: "entrycontent3", intensity_level: "3", mood_id:mood3.id, user_id: user3.id)
-entry4 = Entry.create(date: "date4", title: "entrytitle4", context: "entrycontent4", intensity_level: "4", mood_id:mood4.id, user_id: user4.id)
-entry5 = Entry.create(date: "date5", title: "entrytitle5", context: "entrycontent5", intensity_level: "5", mood_id:mood5.id, user_id: user5.id)
+entry1 = Entry.create(date: "2020-11-12", title: "Feeling Motivated!", context: "Today, I worked on my project. I was quite stressed out in the morning. But I meditated for a bit to calm myself. Now I feel motivated to keep working!", intensity_level: "1", mood_id: mood1.id, user_id: user1.id)
+entry2 = Entry.create(date: "2020-11-09", title: "Tired af lol", context: "I AM SO TIRED! I am not sure what to write. All I know is I need to rest up to prepare for tomorrow!", intensity_level: "2", mood_id:mood2.id, user_id: user2.id)
+entry3 = Entry.create(date: "2020-11-08", title: "YAS TO WEEKEND", context: "I love a good weekend! I visited some friends. We took a few hours roadtrip and stayed overnight!", intensity_level: "3", mood_id:mood3.id, user_id: user3.id)
+entry4 = Entry.create(date: "2020-11-06", title: "Excited!", context: "Thank goodness to the day off I had today!! I was feeling drained until my friend, Cary invited me to a hike! It's crazy how nature do to your body! Should hike more!! :)", intensity_level: "4", mood_id:mood4.id, user_id: user4.id)
+entry5 = Entry.create(date: "2020-11-07", title: "HELLO TO MORE WEEKEND!", context: "Yesterday been a good day. Today as well. Very productive. Got a lot work done! Yay!", intensity_level: "5", mood_id:mood5.id, user_id: user5.id)
 
 
 
